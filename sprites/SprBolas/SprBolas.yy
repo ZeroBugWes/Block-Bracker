@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"SprBolas",
   "bboxMode":0,
-  "bbox_bottom":36,
+  "bbox_bottom":37,
   "bbox_left":23,
   "bbox_right":37,
   "bbox_top":22,

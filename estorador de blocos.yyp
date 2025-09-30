@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,10 +34,13 @@
   },
   "name":"estorador de blocos",
   "resources":[
-    {"id":{"name":"ObjePlayer","path":"objects/ObjePlayer/ObjePlayer.yy",},},
+    {"id":{"name":"objBola","path":"objects/objBola/objBola.yy",},},
+    {"id":{"name":"ObjColisao","path":"objects/ObjColisao/ObjColisao.yy",},},
+    {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"SprBlocos","path":"sprites/SprBlocos/SprBlocos.yy",},},
     {"id":{"name":"SprBolas","path":"sprites/SprBolas/SprBolas.yy",},},
+    {"id":{"name":"SprColisao","path":"sprites/SprColisao/SprColisao.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
     {"id":{"name":"SprPlayer","path":"sprites/SprPlayer/SprPlayer.yy",},},
   ],
