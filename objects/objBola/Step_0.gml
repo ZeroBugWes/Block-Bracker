@@ -155,54 +155,54 @@ else{
 	e depois destuila
 	*/
 	//Colição na esquerda
- if place_meeting(x - velocidade, y, objBlocos){
+ if place_meeting(x - velocidade, y, objBloco){
 	//Agora criamos uma variavel do bloco qua a boinha acertou e destroi ele
-	blocoAcertado = instance_place(x - velocidade, y, ObjBloco)
+	blocoAcertado = instance_place(x - velocidade, y, objBloco)
 		//Agora destruimo
-		instance_destroy(BlocoAcertyado)
+		instance_destroy(blocoAcertado)
 		//como acertamos na esquerda, agora iremos para direita
 		direcaoHorizontal = 1
  }		
 		//Colição na direita
- if place_meeting(x - velocidade, y, objBlocos){
+ if place_meeting(x + velocidade, y, objBloco){
 	//Agora criamos uma variavel do bloco qua a boinha acertou e destroi ele
-	blocoAcertado = instance_place(x + velocidade, y, ObjBloco)
+	blocoAcertado = instance_place(x + velocidade, y, objBloco)
 		//Agora destruimo
-		instance_destroy(BlocoAcertyado)
+		instance_destroy(blocoAcertado)
 		//como acertamos na , agora iremos para direita
 		direcaoHorizontal = -1
  }
 		//Colição na direita
- if place_meeting(x, velocidade, objBlocos){
+ if place_meeting(x, velocidade, objBloco){
 	//Agora criamos uma variavel do bloco qua a boinha acertou e destroi ele
-	blocoAcertado = instance_place(x + velocidade, y, ObjBloco)
+	blocoAcertado = instance_place(x + velocidade, y, objBloco)
 		//Agora destruimo
-		instance_destroy(BlocoAcertyado)
+		instance_destroy(blocoAcertado)
 		//como acertamos na direita, agora iremos para esquerda
 		direcaoHorizontal = -1
 	}		
 	
 	//Colição em cima 
- if place_meeting(x, y - velocidade, objBlocos){
+ if place_meeting(x, y - velocidade, objBloco){
 	//Agora criamos uma variavel do bloco qua a boinha acertou e destroi ele
-	blocoAcertado = instance_place(x + velocidade, y, ObjBloco)
+	blocoAcertado = instance_place(x , y - velocidade, objBloco)
 		//Agora destruimo
-		instance_destroy(BlocoAcertyado)
+		instance_destroy(blocoAcertado)
 		//como acertamos em cima. agora iremos para baixo
-		direcaoHorizontal = 1
+		direcaoVertical = 1
 	}		
 		
-		//Colição em cima 
- if place_meeting(x, y + velocidade, ObjBlocos){
+		//Colição em baixo 
+ if place_meeting(x, y + velocidade, objBloco){
 	//Agora criamos uma variavel do bloco qua a boinha acertou e destroi ele
-	blocoAcertado = instance_place(x, y + velocidade,  ObjBloco)
+	blocoAcertado = instance_place(x, y + velocidade,  objBloco)
 		//Agora destruimo
-		instance_destroy(BlocoAcertyado)
+		instance_destroy(blocoAcertado)
 		//como acertamos em baixo. agora iremos para cima
-		direcaoHorizontal = -1
+		direcaoVertical = -1
 	}		
 		
-		
+}	
 //No final, some as direções com uas respectivas variaveis vezes a velocidade
 //X some com a direção horizontral
 x += direcaoHorizontal * velocidade

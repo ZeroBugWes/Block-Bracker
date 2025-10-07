@@ -34,10 +34,12 @@
   },
   "name":"estorador de blocos",
   "resources":[
-    {"id":{"name":"ObjBloco","path":"objects/ObjBloco/ObjBloco.yy",},},
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"objBloco","path":"objects/objBloco/objBloco.yy",},},
     {"id":{"name":"objBola","path":"objects/objBola/objBola.yy",},},
     {"id":{"name":"ObjColisao","path":"objects/ObjColisao/ObjColisao.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
+    {"id":{"name":"Objpontos","path":"objects/Objpontos/Objpontos.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"SprBlocos","path":"sprites/SprBlocos/SprBlocos.yy",},},
     {"id":{"name":"SprBolas","path":"sprites/SprBolas/SprBolas.yy",},},
