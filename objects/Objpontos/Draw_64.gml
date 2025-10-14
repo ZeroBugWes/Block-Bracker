@@ -51,7 +51,8 @@ agora para mostrar os pontois vamos usar   uma função e aproveitaremos e apren
 	
 	*/
 	mensagem = string(global.pontos)
-	
+	draw_set_font(fntPontos)
+	draw_set_color(c_red)
 	draw_text(x,y,mensagem)
 
  /*
