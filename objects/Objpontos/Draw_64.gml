@@ -50,9 +50,29 @@ agora para mostrar os pontois vamos usar   uma função e aproveitaremos e apren
 	y A
 	
 	*/
-	mensagem = string(global.pontos)
+	if global.pontos < 10{
+		mensagem = "0000" + string(global.pontos)
+	} 
+	else if global.pontos < 100{
+		mensagem = "000" + string(global.pontos)
+	} 
+	else if global.pontos < 1000{
+		mensagem = "00" + string(global.pontos)
+	}
+	else if global.pontos < 10000{
+		mensagem = "0" + string(global.pontos)
+	}
+	else{
+		mensagem = string(global.pontos)
+	}
+
+	//mensagem = string(global.pontos)
 	draw_set_font(fntPontos)
+	
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_top)
+
 	draw_set_color(c_red)
-	draw_text(x,y,mensagem)
+	draw_text(room_width / 2 ,y,mensagem)
 
  /*

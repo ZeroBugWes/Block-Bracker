@@ -18,4 +18,9 @@ Descrição:
  
  E caso o numero sorteado seja o 15, ele iniciara com uma bola dentro
 */
-irandom_range()
+tipoBloco = irandom_range(1,15)
+
+if tipoBloco == 15{
+	//troca o sprite para colocar uma bola dentro
+	sprite_index = sprBlocobola
+}
