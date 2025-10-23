@@ -1,3 +1,7 @@
+if global.isFim{
+	exit
+}
+
 //Primeiro vamos seguir o x dp player
 //x = objPlayer.x
 

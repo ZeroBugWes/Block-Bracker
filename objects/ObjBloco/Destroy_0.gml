@@ -13,6 +13,8 @@ Caso o tipo seja 15,quer dizer que é um bloco com uma bola dentro
 Então quando for destruido e tiopo dele for 15 iremos criarv uma bol no lugar
 */
 
+global.quantBlocos--
+
 if tipoBloco == 15{
 	instance_create_layer(x, y,"instances", objBola)
 }

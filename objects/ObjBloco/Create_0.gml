@@ -24,3 +24,12 @@ if tipoBloco == 15{
 	//troca o sprite para colocar uma bola dentro
 	sprite_index = sprBlocobola
 }
+ 
+ //variaqvel mglobAL PARA CONTAR A QUANTIDADES DE BOLCOS 
+ 
+ if ! variable_global_exists("quantBlocos"){
+	 global.quantBlocos = 1
+ }
+ else{
+	 global.quantBlocos++
+ }
